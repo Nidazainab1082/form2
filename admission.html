@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         .border {
+        height: 1500px;
+    width: 1060px; 
+    background-color: rgb(199, 187, 187);
+    margin-left: 130px;
+    margin-top: 50px;
+
+    
+  
+    
+    
+}
+body{
+    background-color: rgb(19, 19, 77);
+}
+.heading {
+margin-left: 200px;
+word-spacing: normal;
+margin-top: 10px;
+}
+.registration{
+    float:right;
+    margin-right: 20px;
+    height: 20px;
+    width: 190px;
+    text-align: center;
+}
+h4 {
+    background-color:rgb(29, 29, 94) ;
+    color: aliceblue;
+}
+.english {
+    text-align: center;
+}
+.facultytop {
+    width: 770px;
+    height: 140px;
+    border: 1px solid black;
+    margin-top: 7px;
+}
+.list1 {
+  display: flex;
+}
+.list2 {
+  display: flex;
+}
+.list3 {
+  display: flex;
+}
+
+
+
+ 
+
+/* li {
+     display: inline;
+    padding: 15px 12px 15px 12px;
+    margin-left: 2px;
+} */
+ li {
+    margin: 16px;
+ }
+
+ input {
+    position:relative;
+  background:transparent;
+    border:2px solid rgba(56, 45, 97, 0.479);
+  font-family:sans-serif;
+  color:rgb(39, 36, 36);
+    cursor:pointer;
+    background-color: rgb(246, 247, 248);
+    height: 20px;
+  }
+  input::after
+  {
+    position:absolute;
+    content:" ";
+    width:20px;
+    height:2px;
+    top:-5px;
+    left:0px;
+    transition: .4s linear;
+  }
+  input:hover
+  {
+    box-shadow:0px 2px 10px 4px rgb(247, 247, 248);
+  }
+  input:hover::after
+  {
+    left:152px;
+  }
+  input::before
+  {
+    position:absolute;
+    content:" ";
+    width:40px;
+    height:5px;
+    bottom:-5px;
+    right:0px;
+    transition: .4s linear;
+  }
+  input:hover::before
+  {
+    right:152px;
+  }
+ 
+
+/*   
+   div.list1 {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+   }
+   .div2 {
+    padding-left: 100px;
+   }
+   .div3 {
+    padding-left: 100px;
+   }
+   .div4 {
+    padding-left: 100px;
+   }
+   .div5 {
+    padding-left: 100px;
+   }
+   .div6 {
+    padding-left: 100px;
+   }
+    */
+
+ 
+
+  
+ 
+
+ /* .login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+} */
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+} 
+
+.login-box .user-box {
+  position: relative;
+} 
+
+.login-box .user-box input {
+  width: 30%;
+  
+  font-size: 16px;
+  color: #0c0c0c;
+  border: none;
+  border-bottom: 1px solid #020202;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #1e034b;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #0e1538;
+} */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.container a{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    background: #fff;
+    margin: 20px;
+}
+.container a::before,
+.container a::after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(26, 214, 58);
+    transition: 0.5s;
+}
+.container a:hover:before
+{
+    inset: -3px;
+}
+.container a button
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #0e1538;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+
+
+ 
+
+
+  
+
+ 
+
+
+</style>
+<body>
+    <div class="top">
+
+        <div class="border">
+            <div class="english">
+            
+
+
+                
+                
+                <h1 style="font-size: 30px;">English Town</h1>
+                <h2 style="font-size: 22px; font-style: italic;">Language & Computer Centre</h2>
+                <h3 style="font-size: 15px;">Cell # 0345-2702940, 0346-3181706 Email:sir_riaz@hotmail.com</h3>
+            </div>
+            <div class="course" style="margin-left: 100px ; margin-top: 60px; color: #050e3b;">
+                <form action="">
+                    <label for="text" style="background-color: rgb(16, 16, 77);font-size: 18px; color: aliceblue;">COURSE TO WHICH ADMISSION SOUGHT</label>
+                    <input type="text" style="padding-left: 150px;">
+                    <h6 style="font-size: 20px; text-decoration: underline;">PERSONAL INFORMATION:</h6>
+                    <form id="admissionForm">
+
+                        <label for="name">Name(Block Letter)</label>
+                        <input type="text"id="name" name="name" style="padding-left: 450px;">
+                    <br>
+                    <br>
+                    <br>
+                    <label for="">S/o,D/o,W/o, (Block Letter)</label>
+                    <input type="text" style="padding-left: 400px;">
+                    <br>
+                    <br>
+                    <br>
+                    <label for="">Date of Birth</label>
+                    <input type="date"id="datemin" name="datemin" min="2000-01-02" style="padding-left: 100px;"> <label for="">C.N.I.C</label>
+                    <input name="txtCNIC" type="text" id="txtCNIC" class="form-control" maxlength="15" placeholder="99999-9999999-9"> <label for="vehicle1">Male</label>  <input type="checkbox" id="vehicle1" name="vehicle1" value="Male" style="padding-left: 30px;"> <label for="vehicle1">Female</label>  <input type="checkbox" id="vehicle1" name="vehicle1" value="Male" style="padding-left: 30px;">
+                    
+`                    <br>
+                    <br>
+                    <br>
+                    <label for="">Residential Address:</label>
+                    <input type="text" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required style="padding-left: 450px;">
+                    <br>
+                    <br>
+                    <br>
+                    
+                    
+                        
+                
+                  
+                      
+                    <label for="">Tel:(Res)#</label>
+                    <input type="number" style="padding-left: 80px;"> <label for="phone">Cell#</label> <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>  <label for="email"> Email:</label> <input type="email" id="email" name="email">
+                    
+
+                    
+                   
+                    
+                    
+            
+                </form>
+               
+                <h3 style="font-size: 20PX; text-decoration: underline;">
+                    QUALIFICATION
+                </h3>
+                <div class="table1">
+                    <table border="2" bgcolor="#efefef">
+                        <tr>
+                            <th width="320" style="background-color:rgb(16, 16, 77) ; color: aliceblue;">
+                                Highest Academic Qualification
+                            </th>
+                            
+                            <th width="200" style="background-color:rgb(16, 16, 77) ;color: aliceblue;">Institute</th>
+                            
+                            
+                            <th width="70" style="background-color:rgb(16, 16, 77); color: aliceblue;">Year</th>
+                            <th width="150" style="background-color:rgb(16, 16, 77); color: aliceblue;">Grade</th>
+                            <!-- <select name="gvQual$ctl02$ddlResultType" onchange="javascript:setTimeout('__doPostBack(\'gvQual$ctl02$ddlResultType\',\'\')', 0)" id="gvQual_ddlResultType_0" class="form-control">
+                                <option selected="selected" value="SO">Select One</option>
+                                <option value="Grade">Grade</option>
+                                <option value="Division">Division</option>
+                                <option value="%age">%age</option>
+                                <option value="GPA">GPA</option>
+                                <option value="In Progress">In Progress</option>
+                                <option value="Unspecified">Unspecified</option>
+             -->
+                            </select>
+
+                        </tr>
+                        <tr style="height: 25px;">
+                        <th></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr>
+
+                        </tr>
+                        <tr style="height: 25px;">
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="height: 25px;">
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+             </table>
+                </div>
+                <div class="faculty" style="width: 770PX;background-color:rgb(16, 16, 77); margin-top: 7PX; color: aliceblue; text-align: center; height: 22PX;">
+                    FACULTY
+                </div>
+        
+                <div class=" facultytop">
+             
+                         <div class="list1" style="padding-left: 20px;"> 
+                          <div class="abc" style="padding-right: 20px;">
+                            <label for="LEVEL 1"> LEVEL 1 </label> 
+                          <input type="checkbox">
+                         </div>
+                         <div class="abc" style="padding-left: 60px;">
+                             <label for="LEVEL 2"> LEVEL 1</label>
+                         <input type="checkbox"> 
+                          </div>
+                          <div class="abc" style="padding-left: 60px;">
+                            <label for="LEVEL 3">LEVEL 3</label>
+                         <input type="checkbox"> 
+                          </div>
+                          <div class="abc" style="padding-left: 60px;">
+                            <label for="ADVANCED LEVEL"> ADVANCED LEVEL</label>
+                           <input type="checkbox">
+                           </div>
+                          </div>
+                          
+                         <br>
+             
+                         <div class="list2" style="padding-left: 20px;">
+                         
+                             <div class="abc" style="padding-right: 90px;">
+                                <label for="COMPUTER"> COMPUTER</label> 
+                     
+                               <input type="checkbox"> 
+                             </div> 
+                             <div class="abc" style="padding-right: 50px;">
+ 
+                               <label for="C.I.T"> C.I.T </label>
+                               <input type="checkbox">
+                               </div>
+                             
+                             <div class="abc" style="padding-right: 50px;">
+                               <label for="D.I.T"> D.I.T</label>
+                               <input type="checkbox"> 
+                             </div>
+                             <div class="abc" style="padding-right: 50px;">
+                               <label for="GRAPHICS">GRAPHICS</label> 
+                               <input type="checkbox">
+                             </div>
+                             <div class="abc">
+                               
+                                <label for="MS-OFFICE"> MS-OFFICE</label> 
+                                <input type="checkbox"> 
+                               </div>
+                     
+                     </div>
+                     <br>
+                     <div class="list3" style="padding-left: 20px;">
+               
+                         <div class="abc" style="padding-right: 10px;">
+                           <label for="ADVANCED COURSE"> ADVANCED COURSE</label>
+                           <input type="checkbox"> 
+                         </div>
+                         <div class="abc" style="padding-right: 10px;">
+                           <label for="ADV.EXCEL"> ADV.EXCEL</label>
+                           <input type="checkbox"> 
+                         </div>
+                         <div class="abc">
+                           <label for="COMPUTER ACCOUNTING"> COMPUTER ACCOUNTING</label> 
+                           <input type="checkbox"> 
+                         </div>
+                         <div class="abc">
+                           <label for="QUICK BOOK">QUICK BOOK</label> 
+                           <input type="checkbox"> 
+                         </div>
+                         <div class="abc">
+                           <label for="TALLY"> TALLY</label>
+                           <input type="checkbox">
+                         </div>
+                         </div>
+                         
+                         
+                        
+                        
+                            
+                        
+                          
+                           
+                              
+                                
+    
+                        
+                    </div>
+                
+
+                    
+            
+                
+                                 
+                    <br>
+                    <p class="t&c" style="margin-top: 5px; font-weight: bold; text-decoration: underline; font-family: 'Times New Roman', Times, serif;">
+                        TERMS & CONDITIONS:
+                        <br>
+                      <p> <b style="color: brown;"> NO.REFUND </b>will be made for whatever reason or any pretext (Professional/Family etc. ) After a class and time has been <br> assigned,it will only be  
+                        made if the ETLC cencelled the class.  <b style="color: rgb(88, 15, 45);"> NO CHANGE of CLASS or TIME </b> will be intertained  during <br> the course.
+                    </p>
+                  
+                  
+                    <p class="t&c" style="margin-top: 5px; font-weight: bold; text-decoration: underline; font-family: 'Times New Roman', Times, serif;">
+                        CONFIRMATION:
+                        <br>
+                    <div class="confirm">
+                        <p> <b style="color: darkgreen;">ICONFIRM</b> that information given above istrue to the best of my knowledge and i further confirm that i agree abide  by the <br> rules & regulations   </p>
+                    </div>
+                  </div>
+                    
+
+
+
+                    <br>
+                
+  <!-- <div class="date">
+    <label for="date">Date</label>  <input type="date" id="date" name="date" style="border-top: transparent;"> <label for="signature" style="padding-left: 300px;">Applicant's Signature</label> <input type="text">
+  </div> -->
+  
+  <div class="login-box">
+  
+    <form>
+      <div class="user-box" style="margin-left: 100px;">
+        <label>Date</label><input type="text" name="" required="">  
+        <label style="padding-left: 40px;">Applican't Signature</label><input type="text" name="" required=""> 
+       
+      </div>
+    </form>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <a href="#">
+        <button id="myButton">Submit</button>
+    </a>
+</div>
+<div class="img" style="padding-left: 50px;">
+  <img src="qr code.png" alt="" style="height: 90px; width: 90px;">
+</div>
+
+  
+                        
+                      </div>
+                     
+                  </div>
+            </div>
+              
+
+            
+           
+
+
+
+
+
+
+
+           
+
+
+    
+
+
+</div>
+</div>
+<script src="script.js">
+
+</script>
+
+</body>
+</html>
